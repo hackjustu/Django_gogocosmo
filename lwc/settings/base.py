@@ -12,12 +12,11 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '_60q2q!=9yv%79=n=osq69hxk=x6kbw2vy+=&_!3ist+a+7%e1'
+SECRET_KEY = '1&pbr@s*=_81p1qsdo&o)c_q-^a&lgaojj!6l^-_1^ne$ffql8'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -38,6 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'south',
     'joins',
+
 )
 
 MIDDLEWARE_CLASSES = (
@@ -78,23 +78,35 @@ USE_L10N = True
 
 USE_TZ = True
 
+#SHARE_URL = "http://launchwithcode.com/?ref="
+SHARE_URL = "http://127.0.0.1:8000/?ref="
+
 TEMPLATE_DIRS = (
     os.path.join(BASE_DIR, 'templates')
+    #BASE_DIR + "/templates/",
+    #'/Users/jmitch/Desktop/lwc/src/templates/',
 )
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
-# python manage.py collectstatic
 
 STATIC_URL = '/static/'
 
+#STATIC_ROOT = '/Users/jmitch/desktop/lwc/src/static/static_root/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static', 'static_root')
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static', 'static_dirs'),
+    #'/Users/jmitch/desktop/lwc/src/static/static_dirs/',
+    # '/Users/jmitch/desktop/lwc/src/static/static_dirs/',
+    # '/Users/jmitch/desktop/lwc/src/static/static_dirs/',
+    # '/Users/jmitch/desktop/lwc/src/static/static_dirs/',
 )
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static', 'media')
 
-MEDIA_URL = '/media/'
+MEIDA_URL = '/media/'
+
+
+
+
