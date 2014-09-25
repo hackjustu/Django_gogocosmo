@@ -1,0 +1,149 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+    
+{% block styles %}
+
+    <style>
+        body {
+            border-top: 4px solid #999;
+            /*min-height: 5000px;*/
+            /*max-width: 5000px;*/
+            background: url('{% static "img/beach.jpg" %}') no-repeat center center fixed;
+            
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            
+            /*background-image: url('{% static "img/beach.jpg" );*/
+            
+        }
+        
+        .jumbotron h1 {
+            font-weight: 100;            
+        }
+        
+        .jumbotron p {
+            font-weight: 100;
+            font-size: 30px;
+        }
+        
+        
+    </style>
+    
+{% endblock %}
+    
+{% block content %}
+ 
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron" style='background-color: white'>
+      <div class="container">
+        <div class='col-sm-6'>
+            <h1>Hello, world!</h1>
+            <p>Use it as a starting point to create something more unique.</p>
+            <p><a class="btn btn-default btn-lg btn-block" href='#signup' role="button">Be First &raquo;</a></p>
+        </div>
+        <div class='col-sm-6'>
+            <img src="{% static 'img/iphone.png' %}" class='img-responsive img-rounded''/>
+        </div>
+      </div>
+    </div> 
+ 
+<div class='container' style='text-align:center;color:black' id="signup">   
+    <div class='col-sm-6 col-sm-offset-3'>
+    <i class="fa fa-unlock-alt fa-5x"></i>
+    <h1>Unlock First</h1>    
+    
+        <form class='form-horizontal' method="POST" action=""> {% csrf_token %}
+            <div class='form-group form-group-lg'>
+                {% if form.email.errors %}
+                    {% for err in form.email.errors %}
+                        <div class="alert alert-warning" role="alert">{{ err }}</div>
+                    {% endfor %}
+                {% endif %}
+                
+                <!--{{ form.as_p }}-->
+                <div class="input-group">
+                    <input class='form-control' type="email" name="email" placeholder="Your email..."/>
+                    <span class='input-group-btn'>
+                        <input type='submit' value='Join' class='btn btn-primary btn-lg' />
+                    </span>
+                </div>
+            </div>
+        </form>
+        <p class='lead'>Sign up here. <br/> Get first news on contents.</p>
+    </div>
+</div>
+
+<div class='row' style='text-align:center;background-color:white;margin-top:;min-height:200px;padding-bottom:40px 0px;border-bottom:1px solid #EEE'>   
+    <div class='col-sm-12'>
+        <h1>Hello</h1>
+        <div class='col-sm-3'>
+            <i class="fa fa-upload fa-3x"></i>
+            <h2>Feature</h2>
+            <p class='lead'>
+                Some feature text goes here.
+            </p>
+        </div>
+        <div class='col-sm-3'>
+            <i class="fa fa-upload fa-3x"></i>
+            <h2>Feature</h2>
+            <p class='lead'>
+                Some feature text goes here.
+            </p>
+        </div>
+        <div class='col-sm-3'>
+            <i class="fa fa-upload fa-3x"></i>
+            <h2>Feature</h2>
+            <p class='lead'>
+                Some feature text goes here.
+            </p>
+        </div>
+        <div class='col-sm-3'>
+            <i class="fa fa-upload fa-3x"></i>
+            <h2>Feature</h2>
+            <p class='lead'>
+                Some feature text goes here.
+            </p>
+        </div>
+    </div>
+</div>
+    
+<div class='row' style='text-align:center;background-color:white;margin-bottom;min-height: 200px;padding-top:40px;'>   
+    <div class='col-sm-12'>
+        <h1>Hello</h1>
+        <div class='col-sm-3'>
+            <i class="fa fa-upload fa-3x"></i>
+            <h2>Feature</h2>
+            <p class='lead'>
+                Some feature text goes here.
+            </p>
+        </div>
+        <div class='col-sm-3'>
+            <i class="fa fa-upload fa-3x"></i>
+            <h2>Feature</h2>
+            <p class='lead'>
+                Some feature text goes here.
+            </p>
+        </div>
+        <div class='col-sm-3'>
+            <i class="fa fa-upload fa-3x"></i>
+            <h2>Feature</h2>
+            <p class='lead'>
+                Some feature text goes here.
+            </p>
+        </div>
+        <div class='col-sm-3'>
+            <i class="fa fa-upload fa-3x"></i>
+            <h2>Feature</h2>
+            <p class='lead'>
+                Some feature text goes here.
+            </p>
+        </div>
+    </div>
+</div>
+    
+{% endblock %}      
+    
+    
+  
