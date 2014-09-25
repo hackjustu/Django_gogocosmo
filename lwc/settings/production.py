@@ -17,7 +17,7 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 ALLOWED_HOSTS = ['*']
 
 
-SHARE_URL = "http://launchwithcode.com/?ref="
+SHARE_URL = "http://ancient-journey-2637.herokuapp.com/?ref="
 # Static asset configuration
 # import os
 # BASE_DIR = os.path.dirname(os.path.abspath(__file__))
