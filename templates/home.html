@@ -9,7 +9,7 @@
         border-top: 6px solid #536895;
         /*min-height: 5000px;*/
         /*min-width: 5000px;*/
-        background: url('{% static "img/bruins.jpg" %}') no-repeat center center fixed;
+        background: url('{% static "img/Bridge.jpg" %}') no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: conver;
@@ -53,8 +53,8 @@
 
 <div class='container' style='text-align:center;color:white;' id="signup" >
 <div class='col-sm-6 col-sm-offset-3'>
-<i class="fa fa-unlock fa-5x"></i>
-  <h1>Unlock First</h1>
+<i class="fa fa-anchor fa-5x"></i>
+  <h1>Nice to meet you</h1>
 
   <form class='form-horizontal' method="POST" action=""> {% csrf_token %}
     <div class='form-group form-group-lg'>
@@ -73,50 +73,35 @@
         </div>
     </div>
   </form>
-  <p class='lead'>Sign up here. <br/> Get First News on Content</p>
+  <p class='lead'>Sign up here. <br/> I'll show you something ...</p>
 </div>
 
 
 </div>
 
+</br></br></br></br>
  
 <div class='row featured-row'>
   <div class='col-sm-12'>
    
     <div class='col-sm-3'>
-      <i class="fa fa-upload fa-3x"></i>
-      <h2>Feature</h2>
-      <p class='lead'>
-      Some feature text goes here.
-      </p>
+      <a href="http://www.ucla.edu"><i class="fa fa-mortar-board fa-4x"></i></a>
     </div>
     <div class='col-sm-3'>
-      <i class="fa fa-upload fa-3x"></i>
-      <h2>Feature</h2>
-      <p class='lead'>
-      Some feature text goes here.
-      </p>
+      <a href="http://www.bruinsnation.com/"><i class="fa fa-paw fa-4x"></i></a>
     </div>
     <div class='col-sm-3'>
-      <i class="fa fa-upload fa-3x"></i>
-      <h2>Feature</h2>
-      <p class='lead'>
-      Some feature text goes here.
-      </p>
+      <a href="http://en.wikipedia.org/wiki/Peter_Hessler"><i class="fa fa-book fa-4x"></i></a>
     </div>
     <div class='col-sm-3'>
-      <i class="fa fa-upload fa-3x"></i>
-      <h2>Feature</h2>
-      <p class='lead'>
-      Some feature text goes here.
-      </p>
+      <a href="#"><i class="fa fa-upload fa-4x"></i></a>
     </div>
 
 
   </div>
 
 </div>
-
+<!--
 <div class='row featured-row'>
   <div class='col-sm-12'>
     <div class='col-sm-3'>
@@ -150,7 +135,7 @@
     </div>
 
 </div>
-
+-->
 
 {% endblock %}
 

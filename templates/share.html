@@ -87,10 +87,16 @@ if ($signUpCount == 0){
       <div class='row'>
         <div class='col-md-6 pull-right' style='text-align:center;'>
         <i class="fa fa-share-alt fa-5x"></i>
-          <h1>Invite Friends &amp;<br/> Earn Rewards</h1>
+	  <br/>
+          <h1>Invite Friends &amp;<br/> Have Fun!</h1>
+	  <br/>
+	  <br/>
           <p>Share your unique link below via Email, Facebook, Twitter, Reddit, or LinkedIn.</p>
           <div class='well' style='background-color:white;'>{{ ref_url }}</div>
-          Share<br/>
+          
+	  <br/>
+	  <br/>
+	  <br/>
 
           <a href="https://www.facebook.com/sharer/sharer.php?u={{ ref_url }}" target="_blank">
           <i class="fa fa-facebook-square fa-4x" style="color:#3b5998"></i>
@@ -106,7 +112,7 @@ if ($signUpCount == 0){
             <a href="http://www.reddit.com/submit?url={{ ref_url }}&title=Hello%20this%20this%20is%20a%20title." target="_blank">
              <i class="fa fa-reddit-square fa-4x" style="color:#900020"></i>
              </a>
-             <a href='https://plus.google.com/share?url=http://codingforentrepreneurs.com' target="_blank">
+             <a href='https://plus.google.com/share?url=http://gogocosmo.com' target="_blank">
               <i class="fa fa-google-plus-square fa-4x" style="color:#D34836"></i>
               </a>
         </div>
@@ -119,48 +125,23 @@ if ($signUpCount == 0){
 
 
 <div class='container' style="text-align:center;">
-Joined number is: {{ count }}<br/>
 
 <div class="row">
 	<div class="col-sm-3">
 	<h3>5 Joined</h3>
 		<div class="progress">
-			  <div class="progress-bar" id='count5' role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+			<div class="progress-bar" id='count5' role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
 			   0%
-			  </div>
+			</div>
 		</div>
-		<h4>Reward Name</h4>
-		<img src="https://cfe-static.s3.amazonaws.com/static/img/ico/apple-touch-icon-72-precomposed.png" />
-		<img src="https://cfe-static.s3.amazonaws.com/static/img/ico/apple-touch-icon-72-precomposed.png" />
-		<hr/>
-		<span style='text-align:left !important;'>
-		<h5>Rewards Include:</h5>
-			<ul>
-				<li>Reward 1</li>
-				<li>Reward 2</li>
-			</ul>
-		</span>
-		<hr/>
 	</div>
 	<div class="col-sm-3">
 	<h3>15 Joined</h3>
 		<div class="progress">
-			  <div class="progress-bar" id="count15" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+			<div class="progress-bar" id="count15" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
 			   0%
-			  </div>
+			</div>
 		</div>
-		<h4>Reward Name</h4>
-		<img src="https://cfe-static.s3.amazonaws.com/static/img/ico/apple-touch-icon-72-precomposed.png" />
-		<img src="https://cfe-static.s3.amazonaws.com/static/img/ico/apple-touch-icon-72-precomposed.png" />
-		<hr/>
-		<span style='text-align:left !important;'>
-		<h5>Rewards Include:</h5>
-			<ul>
-				<li>Reward 1</li>
-				<li>Reward 2</li>
-			</ul>
-		</span>
-		<hr/>
 	</div>
 	<div class="col-sm-3">
 	<h3>25 Joined</h3>
@@ -169,18 +150,6 @@ Joined number is: {{ count }}<br/>
 			   0%
 			  </div>
 		</div>
-		<h4>Reward Name</h4>
-		<img src="https://cfe-static.s3.amazonaws.com/static/img/ico/apple-touch-icon-72-precomposed.png" />
-		<img src="https://cfe-static.s3.amazonaws.com/static/img/ico/apple-touch-icon-72-precomposed.png" />
-		<hr/>
-		<span style='text-align:left !important;'>
-		<h5>Rewards Include:</h5>
-			<ul>
-				<li>Reward 1</li>
-				<li>Reward 2</li>
-			</ul>
-		</span>
-		<hr/>
 	</div>
 	<div class="col-sm-3">
 	<h3>50 Joined</h3>
@@ -189,21 +158,11 @@ Joined number is: {{ count }}<br/>
 			  	0%
 			  </div>
 		</div>
-		<h4>Reward Name</h4>
-		<img src="https://cfe-static.s3.amazonaws.com/static/img/ico/apple-touch-icon-72-precomposed.png" />
-		<img src="https://cfe-static.s3.amazonaws.com/static/img/ico/apple-touch-icon-72-precomposed.png" />
-		<hr/>
-		<span style='text-align:left !important;'>
-		<h5>Rewards Include:</h5>
-			<ul>
-				<li>Reward 1</li>
-				<li>Reward 2</li>
-			</ul>
-		</span>
-		<hr/>
 	</div>
 
 </div>
+
+<!--
 <div class='row featured-row'>
   <div class='col-sm-12'>
    
@@ -222,27 +181,25 @@ Joined number is: {{ count }}<br/>
       Some feature text goes here.
       </p>
     </div>
-     <div class='col-sm-3'>
+    <div class='col-sm-3'>
       <i class="fa fa-upload fa-3x"></i>
       <h2>Feature</h2>
       <p class='lead'>
       Some feature text goes here.
       </p>
     </div>
-     <div class='col-sm-3'>
+    <div class='col-sm-3'>
       <i class="fa fa-upload fa-3x"></i>
       <h2>Feature</h2>
       <p class='lead'>
       Some feature text goes here.
       </p>
     </div>
-
-
-
   </div>
-
 </div>
 
+-->
 </div>
+
 {% endblock %}
 
