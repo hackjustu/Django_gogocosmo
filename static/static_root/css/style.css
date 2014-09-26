@@ -1,0 +1,61 @@
+    body {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    
+    .navbar {
+        margin-bottom: 0px !important;
+        border-radius: 0px !important;
+    }
+
+    .navbar-inverse .navbar-brand, .navbar-brand:hover {
+        color: white;
+    }
+
+    .featured-row {
+        text-align:center;
+        background-color:white;
+        min-height:80px;
+        padding:15px 15px;
+    }
+
+    .navbar-inverse {
+        background-color: #536895 !important;
+        border-color: #536895 !important;
+    }
+
+    .jumbotron h1 {
+        font-weight: 100;
+    }
+      
+    .jumbotron p {
+        font-weight: 100;
+        font-size: 30px;
+    }
+
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+/* Portrait & landscape phone */
+@media (max-width: 480px) {
+    #motto {
+        font-size: 90px;
+    }    
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+    #motto {
+        font-size: 90px;
+    } 
+   
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+    #motto {
+        font-size: 90px;
+    } 
+	
+}

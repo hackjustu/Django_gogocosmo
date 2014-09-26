@@ -1,0 +1,38 @@
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+/* Portrait & landscape phone */
+@media (max-width: 480px) {
+    #motto {
+        font-size: 20px;
+    }
+    
+    #signature {
+	font-size: 20px;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+    #motto {
+        font-size: 20px;
+    }
+    
+    #signature {
+	font-size: 20px;
+    }
+   
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+    #motto {
+        font-size: 30px;
+    }
+    
+    #signature {
+	font-size: 30px;
+    }
+	
+}
