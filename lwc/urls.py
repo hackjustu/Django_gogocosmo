@@ -12,6 +12,5 @@ urlpatterns = patterns('',
     # Examples:
     #url(r'^home2/$', 'lwc.views.home2', name='home'),
     # url(r'^blog/', include('blog.urls')),
-
-    
+   
 )

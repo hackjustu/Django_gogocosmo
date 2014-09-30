@@ -6,7 +6,6 @@ def testhome(request):
 	template = "donotuse.html"
 	return render(request, template, context)
 
-
 # def home2(request):
 # 	context = {}
 # 	template = "home2.html"
