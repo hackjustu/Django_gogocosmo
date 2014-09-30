@@ -1,1 +1,1 @@
-web: gunicorn lwc.wsgi
+web: gunicorn lwc.wsgi 
