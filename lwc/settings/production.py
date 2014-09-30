@@ -18,6 +18,7 @@ ALLOWED_HOSTS = ['*']
 
 
 SHARE_URL = "http://www.gogocosmo.com/?ref="
+
 # Static asset configuration
 # import os
 # BASE_DIR = os.path.dirname(os.path.abspath(__file__))

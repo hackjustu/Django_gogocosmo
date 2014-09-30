@@ -18,9 +18,7 @@
         /*background-image: url('{% static "img/beach.jpg" %}');*/
         /*background-image:url('https://lh4.googleusercontent.com/-FsgMNhfQLSg/AAAAAAAAAAI/AAAAAAAAaRY/3VnF3vSuWKk/photo.jpg');*/
         /*background-repeat: repeat-x;*/
-      }
-     
-      
+      }     
 
     </style>
 
@@ -29,95 +27,85 @@
 {% block content %}
 
 
-  <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron"  style='background-color: white;margin-left: auto;margin-right: -20px'>
-      <div class="container">
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron"  style='background-color: white;margin-left: auto;margin-right: -20px'>
+    <div class="container">
         <div class="row">
             <div class='col-sm-6'>
-              <h1><b>Go</b> Bruins!</h1>
-              <p id='motto'><i>"Tomorrow there will be more to do.
+                <h1><b>Go</b> Bruins!</h1>
+                <p id='motto'><i>"Tomorrow there will be more to do.
                     And failure waits for all who stay
                     with some success made yesterday.
                     Tomorrow you must try <b>once more</b>,
-                    and <b>even harder</b> than before."</i></p>
-              <p id='signature' style='text-align: right'>&#8212 John Wooden</p>
-              <p><a class="btn btn-default btn-lg btn-block" href='#signup' role="button">Let's Go &raquo;</a></p>
+                    and <b>even harder</b> than before."</i>
+                </p>
+                <p id='signature' style='text-align: right'>&#8212 John Wooden</p>
+                <p><a class="btn btn-default btn-lg btn-block" href='#signup' role="button">Let's Go &raquo;</a></p>
             </div>
             <div class='col-sm-6'>
-              <img src="{% static 'img/Cosmo.JPG' %}" class='img-responsive center-block' height="380" width="380" />
+                <img src="{% static 'img/Cosmo.JPG' %}" class='img-responsive center-block' height="380" width="380" />
             </div>
         </div>
-      </div>
     </div>
-
-
+</div>
 <div class='container' style='text-align:center;color:white;' id="signup" >
-<div class='col-sm-6 col-sm-offset-3'>
-<i class="fa fa-anchor fa-5x"></i>
-  <h1>Nice to meet you</h1>
-
-  <form class='form-horizontal' method="POST" action=""> {% csrf_token %}
-    <div class='form-group form-group-lg'>
-    {% if form.email.errors %}
-     {% for err in form.email.errors %}
-     <div class="alert alert-danger" role="alert">{{ err }}</div>
-    <div class="alert alert-danger" role="alert">Your Email is required</div>
-    {% endfor %}
-    {% endif %}
-     
-          <div class="input-group">
-        <input class='form-control' type="email" name="email" placeholder="Your email..." />
-            <span class='input-group-btn'>
-          <input type='submit' value='Join' class='btn btn-primary btn-lg' />
-          </span>
-        </div>
+    <div class='col-sm-6 col-sm-offset-3'>
+        <i class="fa fa-anchor fa-5x"></i>
+        <h1>Nice to meet you</h1>
+        <form class='form-horizontal' method="POST" action="">
+            {% csrf_token %}
+            <div class='form-group form-group-lg'>
+                {% if form.email.errors %}
+                {% for err in form.email.errors %}
+                <div class="alert alert-danger" role="alert">{{ err }}</div>
+                <div class="alert alert-danger" role="alert">Your Email is required</div>
+                {% endfor %}
+                {% endif %}
+                <div class="input-group">
+                    <input class='form-control' type="email" name="email" placeholder="Your email..." />
+                    <span class='input-group-btn'>
+                    <input type='submit' value='Join' class='btn btn-primary btn-lg' />
+                    </span>
+                </div>
+            </div>
+        </form>
+        <p class='lead'>Sign up here. <br/> I'll show you something ...</p>
     </div>
-  </form>
-  <p class='lead'>Sign up here. <br/> I'll show you something ...</p>
 </div>
-
-
-</div>
-
 </br></br></br></br>
- 
 <div class='row featured-row' style='margin-right:-20px;'>
     <div class='col-sm-12'>
-        
         <div class="hidden-xs visible-sm visible-md visible-lg">
             <div class='col-sm-3'>
-              <a href="http://www.ucla.edu"><i class="fa fa-mortar-board fa-4x"></i></a>
+                <a href="http://www.ucla.edu"><i class="fa fa-mortar-board fa-4x"></i></a>
             </div>
             <div class='col-sm-3'>
-              <a href="http://www.bruinsnation.com/"><i class="fa fa-paw fa-4x"></i></a>
+                <a href="http://www.bruinsnation.com/"><i class="fa fa-paw fa-4x"></i></a>
             </div>
             <div class='col-sm-3'>
-              <a href="http://en.wikipedia.org/wiki/Peter_Hessler"><i class="fa fa-book fa-4x"></i></a>
+                <a href="http://en.wikipedia.org/wiki/Peter_Hessler"><i class="fa fa-book fa-4x"></i></a>
             </div>
             <div class='col-sm-3'>
-              <a href="#"><i class="fa fa-upload fa-4x"></i></a>
+                <a href="#"><i class="fa fa-upload fa-4x"></i></a>
             </div>
         </div>
-        
-        
         <div class='visible-xs hidden-sm hidden-md hidden-lg'>
             <div class='col-xs-6'>
-              <a href="http://www.ucla.edu"><i class="fa fa-mortar-board fa-5x"></i></a>
+                <a href="http://www.ucla.edu"><i class="fa fa-mortar-board fa-5x"></i></a>
             </div>
             <div class='col-xs-6'>
-              <a href="http://www.bruinsnation.com/"><i class="fa fa-paw fa-5x"></i></a>
+                <a href="http://www.bruinsnation.com/"><i class="fa fa-paw fa-5x"></i></a>
             </div>
             <div class='col-xs-6'>
-              </br>
-              <a href="http://en.wikipedia.org/wiki/Peter_Hessler"><i class="fa fa-book fa-5x"></i></a>
+                </br>
+                <a href="http://en.wikipedia.org/wiki/Peter_Hessler"><i class="fa fa-book fa-5x"></i></a>
             </div>
             <div class='col-xs-6'>
-              </br>  
-              <a href="#"><i class="fa fa-upload fa-5x"></i></a>
+                </br>  
+                <a href="#"><i class="fa fa-upload fa-5x"></i></a>
             </div>
         </div>
-        
-    </div> 
+    </div>
 </div>
 <!--
 <div class='row featured-row'>
